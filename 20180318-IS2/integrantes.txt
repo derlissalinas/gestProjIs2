@@ -1,4 +1,5 @@
-Integrantes - IS2
+﻿Integrantes - IS2
 - Espínola, Juan
 - Gómez, Félix
 - Salinas, Derlis
+- VamoAPasao
