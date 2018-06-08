@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addTareas">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"/>
+    <EditText
+        android:id="@+id/tareaId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de tarea" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"/>
+    <EditText
+        android:id="@+id/tareaDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Responsable:" />
+    <Spinner
+        android:id="@+id/tareaResponsables"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prioridad:" />
+
+    <Spinner
+        android:id="@+id/tareaPrioridad"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado:" />
+
+    <Spinner
+        android:id="@+id/tareaEstado"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Inicio:" />
+
+    <Button
+        android:id="@+id/btn_fechaInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Fecha" />
+
+    <EditText
+        android:id="@+id/editTextFechaInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:ems="5"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btn_horaInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hora" />
+
+    <EditText
+        android:id="@+id/editTextHoraInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vencimiento:" />
+
+    <Button
+        android:id="@+id/btn_fechaVenc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha" />
+
+    <EditText
+        android:id="@+id/editTextFechaVenc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/btn_horaVenc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hora" />
+
+    <EditText
+        android:id="@+id/editTextHoraVenc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimary"/>
+    <Button
+        android:id="@+id/btn_crearTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAceptar"
+        android:text="CREAR"
+        />
+    <Button
+        android:id="@+id/btn_cancelarTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CANCELAR"
+        android:backgroundTint="@color/colorCancelar"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
