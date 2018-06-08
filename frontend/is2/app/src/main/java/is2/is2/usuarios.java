@@ -74,7 +74,7 @@ public class usuarios extends AppCompatActivity {
         HttpClient httpClient = new DefaultHttpClient();
 
         HttpGet del =
-                new HttpGet("http://10.13.13.99:8080/is2RESTFul/webresources/entidades.usuarios/");
+                new HttpGet("http://10.3.28.29:24925/is2D4/webresources/entidades.usuarios/");
 
         del.setHeader("Accept", "application/json");
         del.setHeader("Content-type", "application/json");
